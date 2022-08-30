@@ -101,7 +101,7 @@ body{
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 1000px;
+    left: 60%;
     top: 380px;
     opacity: calc(0.09);
 
@@ -131,12 +131,9 @@ body{
     font-size: 18px !important;
 }
 
-/* .section-home h5 span{
-    font-family: "Bold";
-    background: linear-gradient(to right, #D38312, #A83279 );
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-} */
+.banner{
+    margin-top: 50px !important;
+}
 
 .img-logo-social-media{
     padding: 15px 15px 15px 0;
@@ -188,6 +185,7 @@ body{
 }
 .side-point h5{
     text-align: end;
+    font-size: 16px;
 }
 .side-point p{
     padding-left: 20px;
@@ -196,3 +194,197 @@ body{
     font-size: 13px ;
     font-family: "Bold";
 }
+
+.content{
+    margin-top: 60px;
+}
+
+.btn-checkit{
+    margin-top: 50px;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.collapse{
+    padding: 10px;
+}
+
+.bottom-info{
+    bottom: 0px !important;
+}
+
+.bottom-info p{
+    padding: 2px;
+    margin-top: 10px;
+    color: var(--white);
+    font-size: 10px;
+    font-family: "Bold";
+    
+    border-radius: 10px !important;
+}
+
+.bottom-info span{
+    color: var(--secondary-color);
+}
+
+@media (max-width: 575.98px) {
+    .section-home{
+        margin-top: 50px;
+    }
+    .elipse2{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 30px !important;
+        top: 480px;
+        opacity: calc(0.09);
+    
+        background: var(--color-elipse);
+        filter: blur(100px);
+    }
+    .elipse1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        opacity: calc(0.25);
+    
+        background: var(--color-elipse);
+        filter: blur(100px);
+    }
+
+    .section-home p{
+        color: var(--secondary-color);
+        width: 90%;
+        font-family: "Bold";
+        font-size: 13px;
+        
+    }
+
+    .banner{
+        margin-top: 0px !important;
+    }
+
+    .side-point{
+        margin-top:0px !important;
+        margin-bottom: 40px;
+    }
+
+    .side-point .content{
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+      }
+
+    .side-point h5{
+        text-align: start !important;
+        font-size: 20px !important;
+    }
+    .content{
+        padding: 10px;
+    }
+    .side-point p{
+        padding: 0px !important;
+        margin: 0px !important;
+        text-align: start !important;
+        font-size: 13px ;
+        font-family: "Bold";
+    }
+
+    .btn-checkit{
+        margin-top: 0px;
+    }
+    
+  }
+
+  @media (max-width: 767.98px) { 
+    .section-home{
+        margin-top: 50px;
+    }
+    .elipse2{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 30px !important;
+        top: 480px;
+        opacity: calc(0.09);
+    
+        background: var(--color-elipse);
+        filter: blur(100px);
+    }
+    .elipse1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        opacity: calc(0.25);
+    
+        background: var(--color-elipse);
+        filter: blur(100px);
+    }
+
+    .section-home p{
+        color: var(--secondary-color);
+        width: 90%;
+        font-family: "Bold";
+        font-size: 13px;
+        
+    }
+
+    .banner{
+        margin-top: 0px !important;
+    }
+
+    .side-point{
+        margin-top:0px !important;
+        margin-bottom: 40px;
+    }
+
+    .side-point .content{
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+      }
+
+    .side-point h5{
+        text-align: start !important;
+        font-size: 20px !important;
+    }
+    .content{
+        padding: 10px;
+    }
+    .side-point p{
+        padding: 0px !important;
+        margin: 0px !important;
+        text-align: start !important;
+        font-size: 13px ;
+        font-family: "Bold";
+    }
+
+    .btn-checkit{
+        margin-top: 0px;
+    }
+  }
+
+  /* @media (min-width: 991.98px) { 
+    .section-home{
+        margin-top: 50px;
+    }
+
+    .side-point{
+        margin-top:-0px !important;
+        margin-bottom: 40px;
+    }
+  } */
