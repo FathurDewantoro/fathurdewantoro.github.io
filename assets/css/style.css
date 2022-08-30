@@ -172,12 +172,12 @@ body{
     
 }
 
-.section-home button{
+.section-home a{
     border: none;
 ;
 }
 
-.section-home button:hover{
+.section-home a:hover{
     border: none;
     background: var(--gradient);
 	-webkit-background-clip: text;
@@ -185,7 +185,7 @@ body{
 
 }
 
-.section-home button h5{
+.section-home a h5{
     font-family: "Bold";
     color: var(--white);
     font-size: 13px !important;
