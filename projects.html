@@ -10,13 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body class="body">
     <div class="elipse2">
     </div>
     <div class="elipse1">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark pt-5">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark pt-2 pb-2">
         <div class="container">
             <a href="index.html" class="link-navbar-brand">
                 <div class="navbar-me row">
@@ -52,15 +53,17 @@
             <div class="row card-projects-left">
                 <div class="col-md-6">
                     <div>
-                        <img src="assets/images/preview_smart_home.png" class="image-preview">
+                        <a href="detail_projects/detail_projects_1.html">
+                            <img src="assets/images/preview_smart_home.png" class="image-preview">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <a href=""><p class="card-title-link">Design User Interface Website Smart Home</p></a>
+                    <a href="detail_projects/detail_projects_1.html"><p class="card-title-link">Design User Interface Website Smart Home</p></a>
                     <p class="author">Created by <span>fathurdewantoro</span></p>
                     <p class="card-date ">15 May 2022</p>
                     <p class="card-desc f-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptates ex eligendi aspernatur provident cumque reprehenderit possimus saepe atque impedit illo sapiente, nesciunt non dolorem neque, dolore obcaecati, delectus dolores asperiores perspiciatis nisi laborum. Maiores repellat laborum quam placeat debitis?</p>
-                    <a href=""><p class="card-more-link f-secondary">Read more ...</p></a>
+                    <a href="detail_projects/detail_projects_1.html"><p class="card-more-link f-secondary">Read more ...</p></a>
                 </div>
             </div>
             <div class="row card-projects-right">
@@ -106,14 +109,18 @@
     </div>
 
     <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('bg-blur', $(this).scrollTop() > 50);
+        });
+    </script>
+    <script>
         document.onreadystatechange = function() {
             if (document.readyState !== "complete") {
                 document.querySelector(
-                  ".body").style.visibility = "hidden";
+                  ".content").style.visibility = "hidden";
             } else {
                 document.querySelector(
-                  ".body").style.visibility = "visible";
-                ScrollReveal().reveal('.body', { delay: 200 });
+                  ".content").style.visibility = "visible";
                 ScrollReveal().reveal('.content', { delay: 400 });
                 ScrollReveal({ reset: true }); 
             }
